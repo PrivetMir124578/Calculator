@@ -7,7 +7,9 @@ public abstract class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Введите выражение [2 + 2] или два римских числа от I до X:[V + V] + Enter. (Внимание: данные необходимо вносить через пробел!)");
+        System.out.println("Введите выражение [2 + 2] или два римских числа от I до X:[V + V] + Enter. \n" +
+                "(Внимание: данные необходимо вносить через пробел!)");
+
         Scanner scanner = new Scanner(System.in);
         String split = scanner.nextLine();
         calc(split);
@@ -124,14 +126,3 @@ public abstract class Main {
         throw new IllegalStateException("Отрицательное значение или 0");
     }
 }
-
-
-
-
-
-
-
-
-
-
-
